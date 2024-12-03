@@ -7,6 +7,8 @@ using System.IO;
 //Add reference to the following to compile.
 //C:\Windows\assembly\GAC_MSIL\System.Management.Automation\1.0.0.0__31bf3856ad364e35\System.Management.Automation.dll
 
+//This is used to bypass via the uninstall engine in Windows.
+
 namespace Bypass
 {
 class Program
