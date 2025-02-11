@@ -1,4 +1,4 @@
-Rem Attribute VBA_ModuleType=VBAModule
+REM Use this in conjunction with the PowerShell Runner.ps1 file
 Option VBASupport 1
 Sub MyMacro()
 
